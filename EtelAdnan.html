@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Etel Adnan">
+    <link rel="stylesheet" href="styleprojet.css">
+    <link rel="icon" type="image/png" href="img/accueil/LB5.png">
+    <title>Etel Adnan</title>
+</head>
+<body>
+
+    <div class="GROSTITRE">Converser autour d'Etel Adnan</div>
+    <div class="texte">
+        <p class="intentions"></p>
+        <p>Etel Adnan est une poète syro-franco-américano-libanaise, écrivaine et artiste visuelle qui a ainsi travaillé à la fois le visuel et le textuel. Le coffret tente, à travers d’éditions, de trouver des dispositifs mettant en lien ces deux pratiques et ainsi créer un regard nouveau sur son œuvre.</p>
+        <p>Elle-même disait “Écrire c’est dessiner”.</p>
+        <p>Par l’utilisation de calques, de scans sur les séries Paysages et Encres, le texte se pose sur l’image, la complète et inversement.</p>
+       
+
+ <div class="editions">
+    <div class="div1">
+        <a href="Poesieetpaysage.html" class="edition">
+             <img src="img/Converser/1.png" alt="Poesieetpaysage">
+        </a>
+    </div>
+    <div class="div2">
+        <a href="Motifs.html" class="edition">
+            <img src="img/Converser/2.png" alt="Motifs">
+         </a>
+    </div>
+    <div class="div3">
+         <a href="Leporello.html" class="edition">
+             <img src="img/Converser/3.png" alt="Leporello">
+         </a>
+    </div>
+    <div class="div4">
+         <a href="Femmesetpaysage.html" class="edition">
+             <img src="img/Converser/4.png" alt="Femmesetpaysage">
+         </a>
+    </div>
+    <div class="div5">
+         <a href="Encre.html" class="edition">
+            <img src="img/Converser/5.png" alt="Encre">
+         </a>
+    </div>
+</div>
+
+<script>
+    const editions = document.querySelectorAll('.edition');
+    editions.forEach(edition => {
+      edition.addEventListener('mouseover', () => {
+        editions.forEach(p => p.classList.add('unactive'));
+        edition.classList.remove('unactive');
+      });
+      edition.addEventListener('mouseout', () => {
+        editions.forEach(p => p.classList.remove('unactive'));
+      });
+    });
+  </script>
+</body>
+</html>

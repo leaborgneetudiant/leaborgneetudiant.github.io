@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Léa Borgne</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="img/accueil/LB5.png">
+  <!-- meta description -->
+  <meta name="description" content="Portfolio de Léa Borgne, designer graphique.">
+  <link rel="stylesheet" href="styleprojet.css">
+</head>
+<body>
+  <header class="header">
+    <h1>
+      Léa Borgne
+    </h1>
+    <nav class="header-nav">
+      <a href="Projets.html">Projets</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="shttps://instagram.com/lea.brgn">Instagram</a>
+    </nav>
+  </header>
+
+  <div class="marquee-container">
+    <span class="marquee-text">Étudiante en design graphique à l'Esad d'Amiens</span>
+</div>
+
+<div class="projets">
+  <a href="Phare.html" class="projet">
+    <img src="img/accueil/Pharecouverture.jpg" alt="RevuePhare">
+  </a>
+  <a href="Apparences.html" class="projet">
+    <img src="img/accueil/apparencecouverture.jpg" alt="Apparences">
+  </a>
+  <a href="Poésieetpaysage.html" class="projet">
+    <img src="img/accueil/paysageetpoésiecouverture.jpg" alt="Poésieetpaysage">
+  </a>
+  <a href="Motifs.html" class="projet">
+    <img src="img/accueil/motifscouverture.jpg" alt="Motifs">
+  </a>
+  <a href="Femmesetpaysage.html" class="projet">
+    <img src="img/accueil/femmeetpaysagecouverture.jpg" alt="Femmesetpaysage">
+  </a>
+  <a href="Leporello.html" class="projet">
+    <img src="img/accueil/leporellocouverture.jpg" alt="Leporello">
+  </a>
+  <a href="Encre.html" class="projet">
+    <img src="img/accueil/encrecouverture.jpg" alt="Encre">
+  </a>
+  <a href="Klikkiphilie.html" class="projet">
+    <img src="img/accueil/klikkicouverture.jpg" alt="Klikkiphilie">
+  </a>
+  <a href="Manifeste.html" class="projet">
+    <img src="img/accueil/manifestecouverture.jpg" alt="Manifeste">
+  </a>
+  <a href="Reportage.html" class="projet">
+    <img src="img/accueil/reportagecouverture.jpg" alt="Reportage">
+  </a>
+  <a href="Bandes.html" class="projet">
+    <img src="img/accueil/bandecouverture.jpg" alt="Bandes">
+  </a>
+  <a href="Amiamie.html" class="projet">
+    <img src="img/accueil/amiamiecouverture.jpg" alt="Amiamie">
+  </a>
+  <a href="Gloubiboulga.html" class="projet">
+    <img src="img/accueil/Gloubiboulgacouverture.jpg" alt="Gloubiboulga">
+  </a>
+</div>
+
+
+  <script>
+    const projets = document.querySelectorAll('.projet');
+    projets.forEach(projet => {
+      projet.addEventListener('mouseover', () => {
+        projets.forEach(p => p.classList.add('unactive'));
+        projet.classList.remove('unactive');
+      });
+      projet.addEventListener('mouseout', () => {
+        projets.forEach(p => p.classList.remove('unactive'));
+      });
+    });
+  </script>
+</body>
+</html>
