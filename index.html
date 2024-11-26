@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Léa Borgne</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="img/accueil/LB.png">
+  <!-- meta description -->
+  <meta name="description" content="Portfolio de Léa Borgne, designer graphique.">
+  <link rel="stylesheet" href="styleprojet.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <a href="index.html">Projets</a>
+      <h2></h2>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+    <div class="titre">
+    <h1>
+      Léa Borgne
+    </h1>
+    </div>
+  </header>
+
+<div class="hover-container">
+  <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Amiamie.html" class="projet projet-xl">
+      <img src="img/accueil/amiamie.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Apparences.html" class="projet projet-xl">
+      <img src="img/accueil/apparences.jpg" alt="Apparences">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Phare.html" class="projet projet-xl">
+      <img src="img/accueil/artaud.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Klikkiphilie.html" class="projet projet-xl">
+      <img src="img/accueil/klikki.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Bandes.html" class="projet projet-xl">
+      <img src="img/accueil/bandes.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Poésieetpaysage.html" class="projet projet-xl">
+      <img src="img/accueil/poesie.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Femmesetpaysage.html" class="projet projet-xl">
+      <img src="img/accueil/femmes.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Leporello.html" class="projet projet-xl">
+      <img src="img/accueil/leporello.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Encre.html" class="projet projet-xl">
+      <img src="img/accueil/encre.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Manifeste.html" class="projet projet-xl">
+      <img src="img/accueil/manifeste.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Reportage.html" class="projet projet-xl">
+      <img src="img/accueil/reportage.jpg" alt="amiamie">
+      </a>
+    </span>
+  </div>
+  <div class="hover-container">
+      <img src="img/accueil/glitch3.gif" alt="gif" class="hover-gif">
+    <span class="hidden-image">
+      <a href="Gloubiboulga.html" class="projet projet-xl">
+      <img src="img/accueil/gloubi.jpg" alt="amiamie">
+      </a>
+    </span>
+</div>
+
+<footer>
+  <div class="footer-colonne">
+    <div class="titre-footer">Contact</div>
+    <br>
+    <div class="texte-footer">leaborgneesad@gmail.com</div>
+  </div>
+  <div class="footer-colonne">
+    <div class="titre-footer">Me suivre</div>
+    <br>
+    <div class="texte-footer"><a href="https://instagram.com/lea.brgn">Instagram</a>
+  </div>
+  </div>
+</footer>
+
+  <script>
+    const projets = document.querySelectorAll('.projet');
+    projets.forEach(projet => {
+      projet.addEventListener('mouseover', () => {
+        projets.forEach(p => p.classList.add('unactive'));
+        projet.classList.remove('unactive');
+      });
+      projet.addEventListener('mouseout', () => {
+        projets.forEach(p => p.classList.remove('unactive'));
+      });
+    });
+  </script>
+</body>
+</html>
