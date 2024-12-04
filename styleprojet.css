@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url(webfonts/NeueMontreal-Bold.woff) format('woff'),
+       url(webfonts/NeueMontreal-Bold.woff2) format('woff2');
+  font-weight: normal;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url(webfonts/CoolveticaBk-Regular.woff2) format('woff2'),
+       url(webfonts/CoolveticaRg-Bold.woff) format('woff');
+  font-weight: normal;
+  font-style: bold;
+}
+
+h1, h2, .GROSTITRE {
+  font-family: 'Neue Montreal', sans-serif;
+}
+
+.texte, .a-propos, .titre-footer {
+  font-family: 'Coolvetica', sans-serif;
+}
+
 .header {
   margin-top: 20px;
 }
@@ -57,7 +81,7 @@ padding-left: 10px;
 }
 
 .header-nav a:hover {
-color: #ffffff;
+color: #ff58d0;
 }
 
 body{
@@ -73,7 +97,11 @@ body{
   margin-right: 10px;
   position: relative;
   display: inline-block;
-  
+}
+
+.hover-gif{
+  height: 400px;
+  width: 710px;
 }
 
 .projet-xl {
@@ -87,7 +115,7 @@ body{
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
   pointer-events: none;
 }
 
@@ -106,10 +134,12 @@ object-fit: fill;
 }
 
 .GROSTITRE{
+  display: block;
+  display: flexbox;
    font-family: Neue Montreal;
    color:rgb(255, 67, 192);
-   -webkit-text-stroke: 10px rgb(255, 67, 192); 
-   font-size: 15em;
+   -webkit-text-stroke: 5px rgb(255, 67, 192); 
+   font-size: 14em;
    margin-top: 20px;
   margin-left: 60px;
 }
@@ -160,7 +190,6 @@ img{
 .slider-1 {
   width: 100%;
   overflow: hidden;
-
 }
 .slider-1 .slider{
   animation: slider-1 15s infinite ease-in-out;
@@ -219,3 +248,10 @@ footer {
     background-color: black; 
     margin: 7em 0px 20px;
 }
+
+  @media (max-width: 768px) {
+    .hover-container {
+      flex-direction: column;
+    }
+  }
+  
