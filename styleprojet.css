@@ -35,6 +35,8 @@ h1, h2, .GROSTITRE {
   margin-left: 20px;
   margin-right: 10px;
 }
+a
+{color: currentcolor;}
 h1{
 position: sticky;
 font-family: Neue Montreal;
