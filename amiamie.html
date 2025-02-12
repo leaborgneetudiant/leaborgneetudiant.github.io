@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Amiamie</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="color: white; text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="color: white; text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+    div class="slideshow-container">
+    <div class="mySlides fade" style="text-align: center;">
+        <img src="img/amiamieimg/1.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/2.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/3.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/4.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/5.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/6.jpg" style="width: 70%;">
+    </div> 
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/7.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/8.jpg" style="width: 70%;">
+    </div>  
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/9.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/10.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/11.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/12.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/13.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/14.jpg" style="width: 70%;">
+    </div> 
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/15.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/16.jpg" style="width: 70%;">
+    </div>  
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/17.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/18.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/19.jpg" style="width: 70%;">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/amiamieimg/20.jpg" style="width: 70%;">
+    </div>
+</div>
+</div>
+<div id="bottom">
+    <div class="infos">
+        <p>Spécimen de la police de caractère inclusive Amiamie</p>
+        <p>14 x 20 cm</p>
+        <p>288 pages</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>Amiamie est une police de caractères à glyphes non-binaires créée par MIRAT-MASSON.</p>
+            <p>Ce projet comporte un spécimen de toute la typographie imprimée sur calques révélant ainsi une lecture sensible de la lettre et des formes nouvelles.</p>
+            <p>Il est accompagné d’un cahier de jeux pour enfants de 13-14 ans afin de faire connaître et de familiariser avec l’écriture inclusive dès le plus jeune âge. Il s’agit de repenser une pédagogie autour de l’usage et la forme de la lettre ainsi que de la langue française dans le but d’accompagner une génération vers davantage d’inclusivité.</p>
+     </div>
+    </div>
+
+
+<script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

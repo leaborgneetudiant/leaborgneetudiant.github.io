@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Etel Adnan</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="color: white; text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="color: white; text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/leporelloimg/leporellos/1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/leporelloimg/leporellos/2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/leporelloimg/leporellos/3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/leporelloimg/leporellos/4.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/leporelloimg/leporellos/5.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/leporelloimg/1.jpg" style="width: 100%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/leporelloimg/2.jpg" style="width: 100%;">
+        </div>
+    </div>
+</div>
+<div id="bottom">
+    <div class="infos">
+        <p>Biographie et cartes postales</p>
+        <p>10,5 x 14,8 cm et 14,8 x 10,5 cm</p>
+        <p>20 pages et 10 cartes</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>Etel Adnan est une poète syro-franco-américano-libanaise, écrivaine et artiste visuelle qui est née au Liban, a fait ses études à Paris, puis a enseigné en Californie pour retourner au Liban, fuir à nouveau pour les États-Unis et finir sa vie en Bretagne.</p>
+            <p>Les cartes postales ainsi que le leporello, reprenant son parcours dans le monde à l’aide de timbres, rendent compte du cheminement de sa vie et de son art à travers les pays.</p>               </div>
+    </div>
+
+
+<script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

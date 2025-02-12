@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Femmes et paysage</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="color: white; text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="color: white; text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/femmesetpaysageimg/18.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/4.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/5.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/6.jpg" style="width: 100%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/7.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/8.jpg" style="width: 100%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/9.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/10.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/11.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/12.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/13.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/14.jpg" style="width: 100%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/15.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/16.jpg" style="width: 100%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/17.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/femmesetpaysageimg/19.jpg" style="width: 100%;">
+        </div>
+    </div>
+</div>
+<div id="bottom">
+    <div class="infos">
+        <p>Édition</p>
+        <p>19 x 25 cm</p>
+        <p>188 pages</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>Etel Adnan, née au Liban en 1925 dans une culture conservatrice, a décidé de voyager, d’étudier et de faire sa vie avec une femme Simone Fattal. Ainsi, elle a déjoué le rôle du genre féminin et ses attentes qui lui étaient attribuées.</p> 
+            <p>Pour Etel Adnan, la conception et la représentation du paysage est centrale dans son œuvre. En effet, elle transcrit un rapport au monde particulier, un ancrage profond dans ce qui entoure l’artiste. Il y a, chez Adnan, une admiration du monde et une quête de se sentir au plus proche de celui-ci.</p> 
+           <p>Adnan a recours à l’abstraction, à la simplification et cet ouvrage a pour but de rassembler, au mieux possible, des artistes femmes qui, à un moment de leur carrière, ont représenté un paysage. Longtemps méconnues dans l’histoire de l’art, elles ont eu droit à une exposition au Centre Pompidou « Elles font l’abstraction » (19 mai 2021 – 23 août 2021).</p>        </div>
+    </div>
+
+
+<script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

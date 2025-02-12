@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Gloubiboulga</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="color: white; text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="color: white; text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/gloubiboulgaimg/1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/4.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/5.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/6.jpg" style="width: 100%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/7.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/AFFICHES/1.jpg" style="width: 90%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/AFFICHES/2.jpg" style="width: 90%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/AFFICHES/3.jpg" style="width: 90%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="img/gloubiboulgaimg/AFFICHES/4.jpg" style="width: 90%;">
+        </div>
+    </div>
+</div> 
+<div id="bottom">
+    <div class="infos">
+        <p>Journal</p>
+        <p>29,7 x 42 cm</p>
+        <p>80 pages</p>
+        <p>4 affiches</p>
+        <p>60 x 80 cm</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>Le journal regroupe les articles de presse et articles universitaires nécessaires à la création des 4 affiches. L’iconographie convoquée s’intègre dans le texte qui se déplie autour des formes.</p> 
+            <p>L’affiche aborde des affaires de corruption d’hommes politiques : celle de Jacques Chirac, de Jérôme Cahuzac, de Nicolas Sarkozy et de Patrick Balkany. Elle cherche à montrer ces derniers sous un même visage afin de communiquer l’idée que, malgré leurs différences, les scandales politico-financiers utilisent les mêmes mécanismes. Les affaires se répètent et se ressemblent…</p>
+            <p>Les FARC ou Forces Armées Révolutionnaires de Colombie, sont une guérilla organisée colombienne qui a lutté contre le gouvernement de 1964 à 2016. C’est un mouvement d’origine communiste qui a donné une grande place aux femmes dans son combat.Guerrilleras cite l’affiche de propagande américaine par J. Howard Miller “We Can Do It !”, emblême du féminisme blanc, capitaliste et libéral, et change le sujet pour que la femme devienne une guerrilleras, une femme racisée qui combat ce système inégalitaire occidental.</p>  
+            <p>L’affiche convoque les références historiques et mythologiques du poème El Desdichado de Gérard de Nerval, poète peu accessible dont le langage est opaque. Mélancolie Heureuse cherche à représenter ce dont parle le poème afin de le percevoir visuellement, plus que textuellement.</p> 
+            <p>L’affiche reprend la psychose collective liée à l’invasion de punaises de lits en décembre 2023 en France.</p>
+        </div>
+    </div>
+
+
+<script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

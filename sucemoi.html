@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Suce-moi</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/sucemoiimg/1.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/sucemoiimg/2.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/sucemoiimg/3.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/sucemoiimg/4.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/sucemoiimg/5.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/sucemoiimg/6.jpg" style="width: 80%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/sucemoiimg/7.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/sucemoiimg/8.jpg" style="width: 90%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/sucemoiimg/9.jpg" style="width: 90%;">
+        </div>
+    </div>
+</div>
+
+<div id="bottom">
+    <div class="infos">
+        <p>Branding</p>
+        <p>4 produits</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>Suce-moi est une marque de compléments alimentaires qui prend le contre-pied des marques déjà existantes qui ciblent des problématiques à la fois individualisantes (le stress, le manque de sommeil, de lumière…) et visant à l’intégration dans le système capitaliste performatif. Suce-moi cherche à nommer et corriger les traumatismes liés à une société prise dans des systèmes de pouvoir et donc de domination.</p> 
+            <p>Ainsi, Suce-moi propose une gamme de compléments personnalisés aux problématiques rencontrées grâce au développement d’un diagnostic en ligne sur lequel le ou la potentiel.lle client.e renseigne son genre, son âge, ses préoccupations principales (entre politique intérieur, écologie, racisme, sexisme…) et se voit ensuite proposer une cure. </p> 
+            <p>La marque comporte 4 produits luttant contre le stress lié au génocide en cours en Palestine, à la montée de l’extrême-droite, à l’élection de Donald Trump aux États-Unis, aux violences sexistes et sexuelles (VSS). Le choix de ces problématiques permet ainsi de viser large et plusieurs tranches d’âge et de catégorie socio-professionnelle, tout en étant conscient.e que celles-ci sont davantage considérées comme de gauche. </p>
+        </div>
+    </div>
+
+
+<script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

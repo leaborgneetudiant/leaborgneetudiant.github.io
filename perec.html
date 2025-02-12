@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Perec</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+
+<div class="top-projet">
+    <div class="description">
+        <h5><a href="#bottom" style="text-decoration: none;">Lire la description</a></h5>
+        </div>
+        <div class="fermer">
+            <h5 style="text-align: right;"><a href="index2.html" style="text-decoration: none;">Fermer</a></h5>
+        </div>
+</div>
+    
+<div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/Perec/1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Perec/2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Perec/3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Perec/4.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Perec/5.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Perec/Brasarmés.jpg" style="width: 100%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/Perec/gorge.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Perec/lettres.jpg" style="width: 100%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="img/Perec/yeux.jpg" style="width: 100%;">
+        </div>
+    </div>
+</div>
+
+<div id="bottom">
+        <div class="infos">
+            <p>4 affiches</p>
+            <p>60 x 80 cm</p>
+            <p>Édition</p>
+            <p>25 x 35 cm</p>
+            <p>110 pages</p>
+        </div>
+        
+        <div class="texte">
+            <p class="intentions">
+                <p>Quand Perec décide d’écrire un roman sans la lettre “e”, il se place dans des conditions extrêmes, voire en danger vis-à-vis de la langue française. Moi, future designer graphique, en utilisant l’Intelligence Artificielle, je me mets également en danger vis-à-vis de ma passion. Cependant, si Perec réussit à faire jaillir une forme unique avec de nouvelles contraintes, s’il parvient à révolutionner une entité si ancienne qu’est le roman avec de nouveaux outils, alors moi aussi je peux essayer. </p> 
+                <p>J’ai longtemps mis de côté l’existence et la puissance de l’IA, pensant que j’allais disparaître sitôt que je l’utilisais. Or, ici, mettre en image l’avant-propos de La Disparition, à l’aide de l’IA, m’a amené vers des idées et processus de création neufs et innovants. Finalement, c’est moi qui tape chaque lettre sur mon clavier pour obtenir ce que je souhaite. </p> 
+                <p>Il me semblait nécessaire, pour moi, de créer ce recueil de ressources pour montrer − et sûrement pour me prouver à moi-même − l’ensemble des recherches qui m’ont poussée à demander certaines choses à l’IA. </p>
+            </div>
+        </div>
+
+
+<script>
+            let slideIndex = 0;
+            showSlides();
+        
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                slides[slideIndex-1].style.display = "block";  
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

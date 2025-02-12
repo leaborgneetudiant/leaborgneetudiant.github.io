@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Klikkiphilie</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="color: white; text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="color: white; text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/klikkiimg/couvklikki.png" style="width: 60%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/4.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/5.jpg" style="width: 100%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/6.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/7.jpg" style="width: 100%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/8.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/9.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/10.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/11.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/12.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/13.jpg" style="width: 100%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/14.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/15.jpg" style="width: 100%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/16.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/klikkiimg/17.jpg" style="width: 100%;">
+        </div>
+    </div>
+</div>
+<div id="bottom">
+    <div class="infos">
+        <p>Éditions</p>
+        <p>21 x 29,7 cm et 17,5 x 24,5 cm</p>
+        <p>74 pages et 94 pages</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>La klikkiphilie est un terme désignant les personnes qui collectionnent les objets qui produisent le son “clic”.</p>
+            <p>Ce projet comporte une édition de recherches réalisée à partir d’expérimentations plastiques sur les objets. Il s’agit de créer un alphabet de formes à l’aide d’encre, de scans, de dessins, de calques…</p>
+            <p>Les formes ainsi créées sont retravaillées dans une édition graphique tentant de retranscrire visuellement des partitions de musiques afin de rendre compte de l’objet de la collection.</p>        </div>
+    </div>
+
+    <script>
+        document.querySelector('.description a').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+<script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+</body>
+</html>

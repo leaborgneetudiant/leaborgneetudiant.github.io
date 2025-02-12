@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Phare</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="color: white; text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="color: white; text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/artaud jounal/phare.jpg" style="width: 70%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/artaud jounal/1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/artaud jounal/2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/artaud jounal/3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/artaud jounal/4.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/artaud jounal/5.jpg" style="width: 100%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/artaud jounal/6.jpg" style="width: 100%;">
+        </div>
+    </div>
+</div>
+
+<div id="bottom">
+    <div class="infos">
+        <p>Revue autour d'Antonin Artaud</p>
+        <p>21 x 29,7 cm</p>
+        <p>105 pages</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>Phare est une revue bi-annuelle visant à faire connaître des personnes issues des sciences humaines peu connues et pourtant importantes dans notre héritage culturel à l’aide d’un corpus de textes universitaires et ainsi faire la lumière sur celles-ci. Le principe graphique de cette revue cherche à retranscrire l’univers particulier de la personne choisie et donc changera à chaque numéro.</p>
+            <p>Antonin Artaud est un théoricien du théâtre, acteur, écrivain, essayiste, dessinateur et poète français du début du 20ème siècle. Son œuvre, fragmentée, décousue et marquée par son trouble mental qui le mènera plusieurs fois en hôpital psychiatrique, reste discrète dans l’apprentissage de la littérature. Et pourtant, il est un personnage essentiel pour aborder une pensée sur le théâtre, la folie, la littérature, le dessin…</p>
+        </div>
+    </div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Apparences</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="color: white; text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="color: white; text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/Apparencesimg/1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/4.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/5.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/6.jpg" style="width: 100%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/7.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/8.jpg" style="width: 100%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/9.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/10.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/Apparencesimg/11.jpg" style="width: 100%;">
+        </div>  
+    </div>
+</div>
+<div id="bottom">
+    <div class="infos">
+        <p>Édition photographique</p>
+        <p>12 x 18 cm</p>
+        <p>23 pages</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>Apparences est une édition qui cherche à capter des formes créées par le corps lorsqu’il se tord et se meut.</p>
+            <p>Ce projet cherche à ne retenir que le modelé et ses contrastes, quitte à ne plus reconnaître un corps. Celui-ci devient ainsi indatable, intemporel.</p>
+            <p>De plus, un tel corps “gros” est peu représenté d’où l’importance de montrer ces formes et bourrelets si dépréciés dans notre société.</p>        </div>
+    </div>
+
+
+<script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

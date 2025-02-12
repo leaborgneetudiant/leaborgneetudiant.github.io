@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Manifeste</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="color: white; text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="color: white; text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/manifesteimg/1.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/manifesteimg/2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/manifesteimg/3.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/manifesteimg/4.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/manifesteimg/5.jpg" style="width: 100%;">
+        </div>
+    </div>
+</div>
+<div id="bottom">
+    <div class="infos">
+        <p>Réinvention d'entrée de lecture</p>
+        <p>15,5 x 15,5 cm</p>
+        <p>4 inserts</p>
+        <p>6 cartes</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>Manifeste pour une démocratie déviante : amours queers face au fascisme est un essai socio-politique de Costanza Spina divisé en deux parties : l’une aborde les symboles et pratiques d’un régime fasciste de ses racines italiennes à nos sociétés contemporaines et l’autre la théorie et les pratiques queer qui permettent de sortir de ces systèmes inégalitaires.</p>
+            <p>Afin de repenser un dispositif d’entrée de lecture, il s’agit d’opter pour le motif de la foule et de la tâche qui reprend la première définition de la queerness soit l’étrange, le non-commun. Le livre est accompagné de cartes avec des figures queer qui ont fait avancer la pensée et l’obtention de droits pour minorités sexuelles et de genres ainsi que des inserts avec des citations qui parsèment le texte.</p>        </div>
+    </div>
+
+
+<script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>

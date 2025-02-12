@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Borgne - Wanda</title>
+    <link rel="icon" type="image/png" href="img/accueil/LB.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jtv0rth.css">
+</head>
+<body>
+    <div class="top-projet">
+        <div class="description">
+            <h5><a href="#bottom" style="text-decoration: none;">Lire la description</a></h5>
+            </div>
+            <div class="fermer">
+                <h5 style="text-align: right;"><a href="index2.html" style="text-decoration: none;">Fermer</a></h5>
+            </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="text-align: center;">
+            <img src="img/wandaimg/1.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/2.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/3.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/4.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/5.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/6.jpg" style="width: 80%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/wandaimg/7.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/8.jpg" style="width: 80%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="img/wandaimg/9.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/10.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/11.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/12.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/13.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/14.jpg" style="width: 80%;">
+        </div> 
+        <div class="mySlides fade">
+            <img src="img/wandaimg/15.jpg" style="width: 80%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/wandaimg/16.jpg" style="width: 80%;">
+        </div>  
+    </div>
+</div>
+
+<div id="bottom">
+    <div class="infos">
+        <p>Photographies autour du film Wanda de Barbara Loden</p>
+    </div>
+    
+    <div class="texte">
+        <p class="intentions">
+            <p>Dans le film Wanda, Barbara Loden se met en scène telle une femme qui erre, prise dans le tumulte d'une fuite avec un délinquant. Le système patriarcale est foncièrement violent envers elle en lui enlevant ses enfants et en la menant à suivre cet homme violent.</p> 
+            <p>Cette errance n'est pas source d'une compréhension de soi ce qui pourrait être positif mais source de violences. C'est cet égarement cruel que j'ai voulu retranscrire dans mes photographies.</p> 
+        </div>
+    </div>
+
+
+<script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+</script>
+<script>
+    document.querySelector('.description a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>
