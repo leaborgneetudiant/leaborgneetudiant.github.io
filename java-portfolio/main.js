@@ -291,3 +291,8 @@ const h = window.innerHeight;
       dejaClique = true;
     }
   });
+  document.querySelectorAll(".projet").forEach((projet, index) => {
+    const sanitizedTitle = sanitizeName(json[index].titre);
+    const imagePath = `img/${sanitizedTitle}.png`;
+    projet.style.backgroundImage = `url(${imagePath})`;
+  });
