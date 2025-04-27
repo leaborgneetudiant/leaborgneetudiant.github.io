@@ -246,6 +246,8 @@ const h = window.innerHeight;
       const sanitizedTitle = sanitizeName(json[index].titre);
       const imagePath = `img/${sanitizedTitle}.png`;
       window.open(imagePath, "_blank");
+     fiche.appendChild(projet);
+
     });
   });
     anim.play(50);
