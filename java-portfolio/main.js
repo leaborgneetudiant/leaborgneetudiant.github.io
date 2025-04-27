@@ -111,7 +111,23 @@ json.forEach((item) => {
   //   opacity:0, duration: 0.5 });
 
   const img = document.createElement("img");
-  img.src = `img/${sanitizeName(item.titre)}.png`;
+  // Check if the image exists before assigning it
+  const sanitizedTitle = sanitizeName(item.titre);
+  const imagePath = `img/${sanitizedTitle}.png`;
+  
+  fetch(imagePath, { method: 'HEAD' })
+    .then((response) => {
+      if (response.ok) {
+        img.src = imagePath;
+      } else {
+        console.warn(`Image not found: ${imagePath}`);
+        img.src = 'img/default.png'; // Fallback image
+      }
+    })
+    .catch((error) => {
+      console.error(`Error fetching image: ${imagePath}`, error);
+      img.src = 'img/default.png'; // Fallback image
+    });
   div.appendChild(img);
  
 
@@ -210,19 +226,28 @@ const h = window.innerHeight;
       transformOrigin: "50% 50%"
      });
 
-   let anim = gsap.to(".projet", {
-      motionPath: {
-        path: d,
-        autoRotate: "random(-30,30,5)",
-      },
-      duration: 14,
-      stagger:{
-        each : 1,
-        repeat: -1,
-        ease: "linear",
-      },
+  let anim = gsap.to(".projet", {
+    motionPath: {
+      path: d,
+      autoRotate: "random(-30,30,5)",
+    },
+    duration: 14,
+    stagger: {
+      each: 1,
+      repeat: -1,
       ease: "linear",
+    },
+    ease: "linear",
+   });
+
+  // Add click event to open the image link
+  document.querySelectorAll(".projet").forEach((projet, index) => {
+    projet.addEventListener("click", () => {
+      const sanitizedTitle = sanitizeName(json[index].titre);
+      const imagePath = `img/${sanitizedTitle}.png`;
+      window.open(imagePath, "_blank");
     });
+  });
     anim.play(50);
 
   const damier = document.querySelector('.damier');
