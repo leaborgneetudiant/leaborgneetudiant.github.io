@@ -241,15 +241,8 @@ const h = window.innerHeight;
    });
 
   // Add click event to open the image link
-  document.querySelectorAll(".projet").forEach((projet, index) => {
-    projet.addEventListener("click", () => {
-      const sanitizedTitle = sanitizeName(json[index].titre);
-      const imagePath = `img/${sanitizedTitle}.png`;
-      window.open(imagePath, "_blank");
-     fiche.appendChild(projet);
 
-    });
-  });
+
     anim.play(50);
 
   const damier = document.querySelector('.damier');
@@ -290,9 +283,4 @@ const h = window.innerHeight;
       imageElement.classList.add('visible');
       dejaClique = true;
     }
-  });
-  document.querySelectorAll(".projet").forEach((projet, index) => {
-    const sanitizedTitle = sanitizeName(json[index].titre);
-    const imagePath = `img/${sanitizedTitle}.png`;
-    projet.style.backgroundImage = `url(${imagePath})`;
   });
