@@ -121,7 +121,7 @@ json.forEach((item) => {
         img.src = imagePath;
       } else {
         console.warn(`Image not found: ${imagePath}`);
-        img.src = 'img/default.png'; // Fallback image
+      img.src = 'java-portfolio/img/default.png'; // Fallback image
       }
     })
     .catch((error) => {
