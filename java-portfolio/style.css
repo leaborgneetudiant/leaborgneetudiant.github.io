@@ -2,7 +2,6 @@
 @font-face{
     font-family: 'Pencerio-Hairline';
     src: url(webfonts/Pencerio-Hairline.woff) format('woff');
-    src: url(webfonts/Pencerio-Hairline.woff2) format('woff2');
 }
 
 *{
